@@ -21,7 +21,7 @@
         <form action="myscript.php" method="POST">
           <div class="mb-3">
             <label for="paragraph">Paragrafo:</label>
-            <input type="text" name="paragraph" id="paragraph" class="form-control" placeholder="Inserisci paragrafo">
+            <textarea name="paragraph" id="paragraph" class="form-control" placeholder="Inserisci paragrafo"></textarea>
           </div>
 
           <div class="mb-3">
