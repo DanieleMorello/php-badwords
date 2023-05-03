@@ -2,8 +2,6 @@
 $paragraph = trim($_POST["paragraph"]);
 $word_to_censor = trim($_POST["word_to_censor"]);
 $paragraph_censored = str_replace("$word_to_censor", "***", $paragraph);
-
-
 ?>
 
 <!DOCTYPE html>
@@ -18,11 +16,13 @@ $paragraph_censored = str_replace("$word_to_censor", "***", $paragraph);
 
 <body>
   <p>
-    <?php echo $paragraph . strlen($paragraph); ?>
+    <?php echo $paragraph . " (" . strlen($paragraph); ?>
+    caratteri)
   </p>
 
   <p>
-    <?php echo $paragraph_censored . strlen($paragraph_censored); ?>
+    <?php echo $paragraph_censored . " (" . strlen($paragraph_censored); ?>
+    caratteri)
   </p>
 </body>
 
